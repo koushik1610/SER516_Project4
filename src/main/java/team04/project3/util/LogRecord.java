@@ -4,13 +4,14 @@ package team04.project3.util;
  * A databag with the message and its other attributes
  * @author  David Henderson (dchende2@asu.edu)
  */
-public class LogRecord {
+public class LogRecord implements LogRecordInterface{
     private final String _formattedMessage;
     private final String _message;
     private final Log.POLICY _policy;
     private final Class _class;
     private final long _timestamp;
 
+    
     /**
      * Creates a record of a log message
      * @param formattedMessage The full formatted message

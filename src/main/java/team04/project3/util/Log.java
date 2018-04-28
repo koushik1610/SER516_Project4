@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * Handles all system logging, to both terminal and console
  * @author  David Henderson (dchende2@asu.edu)
  */
-public class Log {
+public class Log implements LogInterface {
     /**
      * Level of urgency of a log message
      */
@@ -18,6 +18,7 @@ public class Log {
         INFO(2, "INFO"),
         WARNING(3, "WARNING"),
         ERROR(4, "ERROR");
+    	
 
         private final int _level;
         private final String _name;

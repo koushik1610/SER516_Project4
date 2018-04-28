@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @version 1.0
  * @since   2018-02-15
  */
-public class Terminal {
+public class Terminal implements TerminalInterface {
     private static Terminal _instance;
 
     /**
@@ -62,6 +62,8 @@ public class Terminal {
             }
         }).start();
     }
+    
+    
 
     /**
      * Large conditional chain to handle input from a console, accepts the user input line to handle
@@ -94,5 +96,10 @@ public class Terminal {
         } else {
             Log.i("Invalid command, type \"help\" for list of all commands", Terminal.class);
         }
+    }
+
+    @Override
+    public void Terminal() {
+        
     }
 }
