@@ -100,6 +100,6 @@ public class Terminal implements TerminalInterface {
 
     @Override
     public void Terminal() {
-        
+
     }
 }
